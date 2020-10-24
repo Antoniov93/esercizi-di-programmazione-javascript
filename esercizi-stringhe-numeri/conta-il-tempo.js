@@ -12,3 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
+var input = 15860;
+
+var x = input/3600;
+
+var hh = Math.floor(x);
+
+var min = Math.floor(((x-hh)*60));
+
+var sec = input-(hh*3600)-(min*60);
+
+console.log("Input: " + input + " Secondi");
+
+console.log("Output: " + hh +" Ore, " + min +" minuti e "+ sec + " secondi.");
