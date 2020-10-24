@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+var yearcur = 2020;
+
+var yearbirth = 1993;
+
+var age = (yearcur-yearbirth);
+
+var ytohound = (100-age);
+
+console.log("Input: " + "Anno Corrente = " + yearcur+ " - Anno di Nascita = " + yearbirth);
+console.log("Output: " + "Età = " + age + " - Anni Mancanti (ai 100) = " + ytohound);
