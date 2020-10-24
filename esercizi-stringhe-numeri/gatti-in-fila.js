@@ -17,3 +17,15 @@
 
   http://www.imparareaprogrammare.it
 */
+var ncats = 58;
+
+var catsrow = 7;
+
+var nrow = Math.ceil (ncats/catsrow);
+
+var miscats = (catsrow*nrow)-(ncats);
+
+
+console.log("Input: Numero di Gatti = " + ncats + ", Gatti per Fila = " + catsrow);
+console.log("Output: Numero di File = " + nrow + ", Gatti Mancanti = " + miscats);
+
