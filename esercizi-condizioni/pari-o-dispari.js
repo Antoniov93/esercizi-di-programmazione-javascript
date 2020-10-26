@@ -15,3 +15,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var num = 9;
+
+console.log(`Numero = ${num}`);
+
+console.log(num%2);
+
+
+/* ALTERNATIVA TESTUALE con PARI E DISPARI
+if (num%2==0) {
+console.log("Il Numero è Pari");
+} else if (num%2==1) {
+console.log("Il Numero è Dispari");  
+} 
+*/
