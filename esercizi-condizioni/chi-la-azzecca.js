@@ -24,7 +24,6 @@ var pl1 = 6;
 var pl2 = 10;
 var max = 100;
 var min = 1;
-var winner;
 
 console.log("Giocatore 1 = " + pl1);
 console.log("Giocatore 2 = " + pl2);
