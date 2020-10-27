@@ -19,3 +19,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var i;
+for (i=1; i<=100; i=i+10) {
+console.log(`${i} ${i+1} ${i+2} ${i+3} ${i+4} ${i+5} ${i+6} ${i+7} ${i+8} ${i+9}\n`)
+}
+
