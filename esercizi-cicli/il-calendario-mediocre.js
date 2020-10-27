@@ -45,3 +45,118 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var month = "gennaio";
+var day0 = 5;
+var ndays;
+var wdays;
+
+switch (month) {      // Assegno il numero dei giorni al mese inserito
+  
+  case "febbraio":
+  ndays = 28;
+  break;
+  
+  case "settembre":
+  case "novembre":
+  case "aprile":
+  case "giugno":
+  ndays = 30;
+  break;
+  
+  case "marzo":
+  case "maggio":
+  case "luglio":
+  case "agosto":
+  case "ottobre":
+  case "dicembre":
+  case "gennaio":
+  ndays = 31;
+  break;
+
+  default:
+  ndays = "Mese non Valido"        
+  console.log("Mese non valido!");  // se il mese inserito non è corretto messaggio di errore
+  
+}
+
+if (ndays === "Mese non Valido"){  
+  console.log("Il Calendario non può essere Stampato");  // se il mese inserito non è corretto il codice si ARRESTA!
+
+} else {
+
+  switch (day0) {  // Assegno il nome del giorno al giorno 
+    case 0:
+    wdays = "Lunedì"
+    break;
+    case 1:
+    wdays = "Martedì"
+    break;
+    case 2:
+    wdays = "Mercoledì"
+    break;
+    case 3:
+    wdays = "Giovedì"
+    break;
+    case 4:
+    wdays = "Venerdì"
+    break;
+    case 5:
+    wdays = "Sabato"
+    break;
+    case 6:
+    wdays = "Domenica"
+    break;
+      
+  }
+  
+   if (day0 >= 7||day0 < 0){
+  console.log("Giorno iniziale non Valido");
+   console.log("Il Calendario non può essere Stampato"); // se il giorno inserito non è corretto il codice si ARRESTA!
+   } else {
+
+
+console.log(`Mese: ${month}, Giorni: ${ndays}`); 
+console.log(`Giorno Iniziale Settimana: ${day0}° - ${wdays} `);
+
+var i=1;
+while (i<=ndays) {  // Inizio Ciclo
+
+  if (day0 >= 7){    // se il giorno iniziale è oltre la domenica day0 = 6, il giorno iniziale ricomincia da 0 (Lunedì)
+    day0 = 0;
+  } 
+  
+  switch (day0) {  // Ri-Assegno il giusto nome al giorno della settimana
+        case 0:
+        wdays = "Lunedì"
+        break;
+        case 1:
+        wdays = "Martedì"
+        break;
+        case 2:
+        wdays = "Mercoledì"
+        break;
+        case 3:
+        wdays = "Giovedì"
+        break;
+        case 4:
+        wdays = "Venerdì"
+        break;
+        case 5:
+        wdays = "Sabato"
+        break;
+        case 6:
+        wdays = "Domenica"
+        break; 
+        
+      }
+      
+console.log(`${i} - ${wdays}`); // Stampo il calendario!
+i++;
+day0++;
+}
+}
+}
+
+
